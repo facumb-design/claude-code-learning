@@ -1,0 +1,52 @@
+{
+  "compilerOptions": {
+    /* Configuración de lenguaje */
+    "target": "ES2022",                     // Código moderno
+    "module": "ESNext",                     // Módulos ES6
+    "lib": ["ES2022"],                      // APIs disponibles
+    "moduleResolution": "node",             // Resolución estilo Node.js
+
+    /* Configuración estricta (para aprender buenas prácticas) */
+    "strict": true,                         // Activa todos los checks estrictos
+    "noImplicitAny": true,                  // Error si TypeScript infiere 'any'
+    "strictNullChecks": true,               // null y undefined como tipos separados
+    "strictFunctionTypes": true,            // Check estricto de tipos de funciones
+    "strictBindCallApply": true,            // Check estricto de bind/call/apply
+    "strictPropertyInitialization": true,   // Propiedades de clase deben inicializarse
+    "noImplicitThis": true,                 // Error si 'this' tiene tipo implícito
+    "alwaysStrict": true,                   // Emitir "use strict" en cada archivo
+
+    /* Checks adicionales */
+    "noUnusedLocals": true,                 // Error si hay variables sin usar
+    "noUnusedParameters": true,             // Error si hay parámetros sin usar
+    "noImplicitReturns": true,              // Error si función no retorna en todos los paths
+    "noFallthroughCasesInSwitch": true,     // Error si switch no tiene break
+
+    /* Configuración de módulos */
+    "esModuleInterop": true,                // Interop entre CommonJS y ES Modules
+    "allowSyntheticDefaultImports": true,   // Permite import default de módulos sin default
+    "resolveJsonModule": true,              // Permite importar archivos .json
+    "isolatedModules": true,                // Cada archivo es un módulo independiente
+
+    /* Configuración de output */
+    "outDir": "./dist",                     // Carpeta de salida
+    "rootDir": "./src",                     // Carpeta raíz de código fuente
+    "declaration": true,                    // Generar archivos .d.ts
+    "declarationMap": true,                 // Sourcemaps para .d.ts
+    "sourceMap": true,                      // Generar sourcemaps
+    "removeComments": false,                // Mantener comentarios en output
+
+    /* Configuración adicional */
+    "skipLibCheck": true,                   // Saltar check de archivos .d.ts de librerías
+    "forceConsistentCasingInFileNames": true // Error si hay inconsistencia en nombres de archivos
+  },
+  "include": [
+    "src/**/*"                              // Incluir todos los archivos en src/
+  ],
+  "exclude": [
+    "node_modules",                         // Excluir dependencias
+    "dist",                                 // Excluir output
+    "**/*.test.ts",                         // Tests tienen su propia config
+    "**/*.spec.ts"
+  ]
+}

@@ -1,12 +1,16 @@
 /**
- * Claude Code Lab - Entry Point
+ * Dev Learning Journal - Entry Point
  *
- * Este es un archivo de ejemplo para comenzar el laboratorio.
+ * Punto de entrada principal de la aplicación.
+ * Aquí inicializaremos el servidor Express.
  */
 
 function main(): void {
-  console.log('¡Bienvenido al Claude Code Lab!');
-  console.log('Este es un espacio para aprender y experimentar.');
+  console.log('🚀 Dev Learning Journal');
+  console.log('📓 Tu diario personal de aprendizaje en programación');
+  console.log('');
+  console.log('⏳ Iniciando servidor...');
+  // TODO: Inicializar servidor Express
 }
 
 // Ejecutar la función principal
