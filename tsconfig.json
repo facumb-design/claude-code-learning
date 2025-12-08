@@ -2,7 +2,7 @@
   "compilerOptions": {
     /* Configuración de lenguaje */
     "target": "ES2022",                     // Código moderno
-    "module": "ESNext",                     // Módulos ES6
+    "module": "commonjs",                   // Módulos CommonJS
     "lib": ["ES2022"],                      // APIs disponibles
     "moduleResolution": "node",             // Resolución estilo Node.js
 

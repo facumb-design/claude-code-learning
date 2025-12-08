@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev Learning Journal 📓</title>
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <h1>📓 Dev Learning Journal</h1>
+      <p>Tu diario personal de aprendizaje en programación</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Formulario para crear entradas -->
+    <section class="card">
+      <h2>✍️ Nueva Entrada</h2>
+      <form id="entry-form">
+        <div class="form-group">
+          <label for="title">Título *</label>
+          <input
+            type="text"
+            id="title"
+            name="title"
+            placeholder="¿Qué aprendiste hoy?"
+            required
+            maxlength="200"
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="content">Descripción *</label>
+          <textarea
+            id="content"
+            name="content"
+            placeholder="Describe lo que aprendiste en detalle..."
+            required
+            rows="5"
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="codeSnippet">Código de ejemplo (opcional)</label>
+          <textarea
+            id="codeSnippet"
+            name="codeSnippet"
+            placeholder="const ejemplo = 'código aquí';"
+            rows="4"
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="tags">Tags * (separados por coma)</label>
+          <input
+            type="text"
+            id="tags"
+            name="tags"
+            placeholder="TypeScript, React, Testing"
+            required
+          >
+          <small>Ej: TypeScript, Express, API REST</small>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">
+            Guardar Entrada
+          </button>
+          <button type="reset" class="btn btn-secondary">
+            Limpiar
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Sección de filtros -->
+    <section class="filters">
+      <div class="filter-group">
+        <input
+          type="text"
+          id="search"
+          placeholder="🔍 Buscar en entradas..."
+        >
+      </div>
+      <div class="filter-info">
+        <span id="entries-count">0 entradas</span>
+      </div>
+    </section>
+
+    <!-- Lista de entradas -->
+    <section id="entries-list" class="entries-list">
+      <!-- Las entradas se cargarán dinámicamente aquí -->
+      <div class="empty-state">
+        <p>📝 Aún no hay entradas</p>
+        <p class="empty-state-hint">¡Crea tu primera entrada arriba!</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>Dev Learning Journal - Creado con TypeScript & Express</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="/js/app.js"></script>
+</body>
+</html>
